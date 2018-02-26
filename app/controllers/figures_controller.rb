@@ -30,7 +30,7 @@ class FiguresController < ApplicationController
       end
 
       @figure.save
-      redirect to "/figures/#{@figure.id}"
+      redirect("/figures/#{@figure.id}")
     end
 
     post '/figures/:id' do
@@ -46,7 +46,7 @@ class FiguresController < ApplicationController
       end
 
       @figure.save
-      redirect to "/figures/#{@figure.id}"
+      redirect("/figures/#{@figure.id}")
     end
 
 
